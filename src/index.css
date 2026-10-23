@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/*
+ * Tailwind v4 define los tokens en CSS con @theme, no en un tailwind.config.js.
+ * Centralizar aqui los colores del panel evita repetir clases largas y mantiene
+ * coherencia visual entre las pantallas.
+ */
+@theme {
+  --color-marca-50: oklch(0.97 0.02 250);
+  --color-marca-100: oklch(0.93 0.04 250);
+  --color-marca-500: oklch(0.62 0.16 255);
+  --color-marca-600: oklch(0.55 0.17 255);
+  --color-marca-700: oklch(0.48 0.15 255);
+
+  /* Estados de stock: se usan en badges y en el dashboard de stock bajo. */
+  --color-stock-alto: oklch(0.72 0.17 150);
+  --color-stock-medio: oklch(0.79 0.16 80);
+  --color-stock-bajo: oklch(0.63 0.21 25);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-900;
+  }
+}
