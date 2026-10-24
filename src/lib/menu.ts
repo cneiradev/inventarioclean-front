@@ -19,7 +19,7 @@ export type ItemMenu = {
 export const MENU_POR_ROL: Record<Rol, ItemMenu[]> = {
   ADMINISTRADOR: [
     { path: '/', etiqueta: 'Inicio' },
-    { path: '/inventario', etiqueta: 'Inventario' },
+    { path: '/inventario', etiqueta: 'Administrador de sistemas' },
     { path: '/inventario/nuevo', etiqueta: 'Agregar nuevo producto' },
     { path: '/inventario/modificar', etiqueta: 'Modificar producto' },
     { path: '/inventario/eliminar', etiqueta: 'Eliminar producto' },
