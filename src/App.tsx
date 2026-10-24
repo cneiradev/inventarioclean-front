@@ -1,6 +1,6 @@
 ﻿import { Navigate, Route, Routes } from 'react-router-dom'
 import ProtectedRoute from './components/ProtectedRoute'
-import Login from './pages/Login'
+import './pages/Login'
 import Home from './pages/Home'
 import Usuarios from './pages/Usuarios'
 import UsuarioForm from './pages/UsuarioForm'
@@ -10,6 +10,7 @@ import ProductoModificar from './pages/ProductoModificar'
 import ProductoEliminar from './pages/ProductoEliminar'
 import Auditoria from './pages/Auditoria'
 import type { Rol } from './types'
+import Login from './pages/Login'
 
 /**
  * Rutas de la aplicacion.
